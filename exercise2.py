@@ -1,6 +1,7 @@
 from __future__ import annotations
 from math import isclose
 from exercise1 import Vector
+#from typing import Self
 
 class Point2D:
     def __init__(self, x: float, y: float) -> None:
@@ -14,7 +15,7 @@ class Point2D:
     def y(self) -> float:
         return self._coordinates[1]
 
-    #def __iadd__(self, other: Vector) -> None:
+    #def __iadd__(self, other: Vector) -> Self:
     #    self._coordinates += other
     #    return self
 
