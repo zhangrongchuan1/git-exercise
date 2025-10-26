@@ -42,6 +42,9 @@ class Rectangle:
         return i in [1, 3]
 
     # def is_in_interval(...) -> bool: # Task A
+    @staticmethod
+    def _is_in_interval(value: float, lower: float, upper: float, tolerance: float = 0.0) -> bool:
+        return (lower - tolerance) <= value <= (upper + tolerance)
 
 def test_rectangle_contains_exact() -> None:
     rectangle = Rectangle(lower_left=Point2D(1.0, 2.0), dx=2.5, dy=1.5)
